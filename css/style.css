@@ -1,0 +1,904 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "Rubik-Light";
+  src: url("../fonts/Rubik/Rubik-Light.ttf");
+  format: "true-type";
+}
+
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url("../fonts/Rubik/Rubik-Regular.ttf");
+  format: "true-type";
+}
+
+@font-face {
+  font-family: "Rubik-Bold";
+  src: url("../fonts/Rubik/Rubik-Bold.ttf");
+  format: "true-type";
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../fonts/Roboto/Roboto-Thin.ttf");
+  format: "true-type";
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  format: "true-type";
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
+  format: "true-type";
+}
+
+/* Base Styles */
+body {
+  background: hsl(0, 12%, 97%);
+}
+
+h1 {
+  font-family: "Roboto-Thin";
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: "Rubik-Regular";
+}
+
+h3 {
+  font-family: "Rubik-Regular";
+}
+
+h4 {
+  font-family: "Roboto-Regular";
+  margin-top: 1rem;
+}
+
+a {
+  font-family: "Roboto-Regular";
+}
+
+/* Navigation */
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  width: 90%;
+}
+
+.main-nav h1 {
+  width: 100%;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0 1rem 40rem;
+}
+
+.main-nav li {
+  list-style-type: none;
+}
+
+.main-nav a {
+  margin-left: 2rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: hsl(0, 0%, 11%);
+}
+
+.main-nav a:hover {
+  background: hsl(0, 0%, 11%);
+  color: hsl(0, 0%, 96%);
+  transition: all 500ms ease;
+}
+
+/* Header */
+.header {
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/organic-1280537_1920-min.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.header-text {
+  padding: 2rem 0 0 2rem;
+}
+
+.about {
+  height: 15rem;
+  width: 45%;
+  margin: 2rem;
+}
+
+.header h1 {
+  color: hsl(13, 45%, 86%);
+}
+
+.header h3 {
+  font-size: 1.5rem;
+  color: hsl(13, 45%, 86%);
+}
+
+.header p {
+  color: hsl(13, 45%, 86%);
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+}
+
+/* Clipboard Header */
+.clipboard-header {
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/detail/desktop/clipboardDetailOptimized.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.clipboard-header h1 {
+  color: hsl(13, 45%, 86%);
+}
+
+.clipboard-header h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: hsl(13, 45%, 86%);
+  border: 2px solid hsl(0, 0%, 96%);
+  width: 37%;
+  padding: 1rem;
+}
+
+.clipboard-header h3 {
+  font-size: 1.5rem;
+  color: hsl(13, 45%, 86%);
+}
+
+/* Fylo Header */
+.fylo-header {
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/detail/desktop/image-fylo-hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fylo-header h1 {
+  color: hsl(13, 45%, 86%);
+}
+
+.fylo-header h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: hsl(13, 45%, 86%);
+  border: 2px solid hsl(0, 0%, 96%);
+  width: 37%;
+  padding: 1rem;
+}
+
+.fylo-header h3 {
+  font-size: 1.5rem;
+  color: hsl(13, 45%, 86%);
+}
+
+/* Fylo Project */
+.clipboard-background,
+.fylo-background,
+.loop-studios-background {
+  display: flex;
+}
+
+.clipboard-project-describe,
+.fylo-project-describe,
+.loop-studios-project-describe {
+  width: 35%;
+  margin: 4rem 6rem;
+}
+
+.clipboard-project-describe h3,
+.fylo-project-describe h3,
+.loop-studios-project-describe h3 {
+  color: hsl(0, 0%, 11%);
+}
+
+.clipboard-project-describe p,
+.fylo-project-describe p,
+.loop-studios-project-describe p {
+  font-family: "Rubik-Regular";
+  font-size: 1rem;
+  color: hsl(0, 0%, 11%);
+  line-height: 1.5rem;
+  letter-spacing: 0.015rem;
+  margin: 0;
+}
+
+.clipboard-project-describe-1,
+.clipboard-project-describe-2,
+.fylo-project-describe-1,
+.fylo-project-describe-2,
+.loop-studios-project-describe-1,
+.loop-studios-project-describe-2 {
+  margin: 1rem 0;
+}
+
+.loop-studios-project-describe-2 ol li,
+.loop-studios-project-describe-2 ul li {
+  font-family: "Rubik-Regular";
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-image {
+  width: 50%;
+}
+
+.clipboard-project-image {
+  width: 50%;
+}
+
+.fylo-project-image {
+  width: 50%;
+}
+
+.loop-studios-project-image {
+  width: 50%;
+}
+
+/* Images */
+.clipboard-project-image-detail-1 {
+  height: 70vh;
+  background: url("../images/detail/desktop/clipboardDetailOptimized.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 2rem 0 0 2rem;
+}
+
+.clipboard-project-image-detail-2 {
+  height: 70vh;
+  width: 30%;
+  background: url("../images/detail/mobile/clipboardMobileOptimized.jpg");
+  background-size: cover;
+  background-position: top;
+  margin: 2rem 0 0 30rem;
+}
+
+.fylo-project-image-detail-1 {
+  height: 70vh;
+  background: url("../images/detail/desktop/image-fylo-preview-1@2x.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 2rem 0 0 2rem;
+}
+
+.fylo-project-image-detail-2 {
+  height: 70vh;
+  background: url("../images/detail/desktop/image-fylo-preview-2@2x.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 2rem 0 0 2rem;
+}
+
+.loop-studios-project-image-detail-1 {
+  height: 70vh;
+  background: url("../images/detail/desktop/LoopstudiosOptimized.jpg");
+  background-size: cover;
+  background-position: top;
+  margin: 2rem 0 0 2rem;
+}
+
+.loop-studios-project-image-detail-2 {
+  height: 70vh;
+  width: 30%;
+  background: url("../images/detail/mobile/LoopStudiosMobileOptimized.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 2rem 0 0 30rem;
+}
+
+/* Loop Studios Header */
+.loop-studios-header {
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/detail/desktop/LoopstudiosOptimized.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.loop-studios-header h1 {
+  color: hsl(13, 45%, 86%);
+}
+
+.loop-studios-header h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: hsl(13, 45%, 86%);
+  border: 2px solid hsl(0, 0%, 96%);
+  width: 37%;
+  padding: 1rem;
+}
+
+.loop-studios-header h3 {
+  font-size: 1.5rem;
+  color: hsl(13, 45%, 86%);
+}
+
+.project-describe-1,
+.project-describe-3 {
+  width: 35%;
+  margin: 4rem 6rem;
+}
+
+.project-describe-2 {
+  width: 35%;
+  margin: 3rem 0 3rem 15rem;
+}
+
+.project-describe-1 h3,
+.project-describe-2 h3,
+.project-describe-3 h3 {
+  color: hsl(0, 0%, 11%);
+}
+
+.project-describe-1 p,
+.project-describe-2 p,
+.project-describe-3 p {
+  font-size: 1rem;
+  color: hsl(0, 0%, 11%);
+  line-height: 1.5rem;
+  letter-spacing: 0.015rem;
+  margin: 1rem 0;
+}
+
+.portfolio-button {
+  width: 35%;
+  padding: 0.5rem 1rem;
+  border: 2px solid hsl(13, 45%, 86%);
+  background: none;
+  margin-top: 1rem;
+}
+
+.portfolio-button:hover {
+  background: hsl(12, 77%, 54%);
+  border-color: hsl(12, 77%, 54%);
+  transition: all 500ms ease;
+}
+
+.portfolio-button a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: hsl(13, 45%, 86%);
+}
+
+.portfolio-button a:hover {
+  color: hsl(0, 0%, 96%);
+  transition: all 500ms ease;
+}
+
+/* Project Header Buttons */
+.clipboard-live-website-button,
+.clipboard-github-button,
+.fylo-live-website-button,
+.fylo-github-button,
+.loop-studios-live-website-button,
+.loop-studios-github-button {
+  width: 15%;
+  padding: 0.5rem 1rem;
+  border: 2px solid hsl(13, 45%, 86%);
+  background: none;
+  margin: 2rem 0 0 2rem;
+}
+
+.clipboard-live-website-button:hover,
+.clipboard-github-button:hover,
+.fylo-live-website-button:hover,
+.fylo-github-button:hover,
+.loop-studios-live-website-button:hover,
+.loop-studios-github-button:hover {
+  background: hsl(12, 77%, 54%);
+  border-color: hsl(12, 77%, 54%);
+  transition: all 500ms ease;
+}
+
+.clipboard-live-website-button a,
+.clipboard-github-button a,
+.fylo-live-website-button a,
+.fylo-github-button a,
+.loop-studios-live-website-button a,
+.loop-studios-github-button a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: hsl(13, 45%, 86%);
+}
+
+.clipboard-live-website-button a:hover,
+.clipboard-github-button a:hover,
+.fylo-live-website-button a:hover,
+.fylo-github-button a:hover,
+.loop-studios-live-website-button a:hover,
+.loop-studios-github-button a:hover {
+  color: hsl(0, 0%, 96%);
+  transition: all 500ms ease;
+}
+
+/* Projects */
+.projects h2 {
+  color: hsl(0, 0%, 11%);
+  width: 35%;
+  margin: 3rem 33rem;
+}
+
+.projects p {
+  font-size: 1.15rem;
+  color: hsl(0, 0%, 11%);
+  width: 72%;
+  margin: 1rem auto;
+  line-height: 2rem;
+  letter-spacing: 0.015rem;
+}
+
+.project-screenshot-1 {
+  background: url(../images/ClipboardThumbnail.png) no-repeat center
+    center/cover;
+  height: 15rem;
+  width: 18%;
+  margin: 3rem 15rem;
+}
+
+.project-screenshot-2 {
+  background: url(../images/FyloDarkThumbnail.png) no-repeat center center/cover;
+  height: 15rem;
+  width: 20%;
+  margin: 1rem 16rem 1rem 7rem;
+}
+
+.project-screenshot-3 {
+  background: url(../images/LoopstudiosThumbnail.png) no-repeat center
+    center/cover;
+  height: 15rem;
+  width: 20%;
+  margin: 1rem 15rem;
+}
+
+.project-1,
+.project-3 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.project-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+.project-describe-1,
+.project-describe-3 {
+  width: 35%;
+  margin: 4rem 6rem;
+}
+
+.project-describe-2 {
+  width: 35%;
+  margin: 3rem 0 3rem 15rem;
+}
+
+.project-describe-1 h3,
+.project-describe-2 h3,
+.project-describe-3 h3 {
+  color: hsl(0, 0%, 11%);
+}
+
+.project-describe-1 p,
+.project-describe-2 p,
+.project-describe-3 p {
+  font-size: 1rem;
+  color: hsl(0, 0%, 11%);
+  line-height: 1.5rem;
+  letter-spacing: 0.015rem;
+  margin: 0;
+}
+
+.project-button {
+  width: 35%;
+  padding: 0.5rem 1rem;
+  border: 2px solid hsl(0, 0%, 11%);
+  background: none;
+  margin-top: 1rem;
+}
+
+.project-button:hover {
+  background: hsl(0, 0%, 11%);
+  border-color: hsl(0, 0%, 11%);
+  transition: all 500ms ease;
+}
+
+.project-button a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: hsl(0, 0%, 11%);
+}
+
+.project-button a:hover {
+  color: hsl(0, 0%, 96%);
+  transition: all 500ms ease;
+}
+
+/* Footer */
+.footer {
+  height: 15vh;
+  background: hsl(0, 0%, 11%);
+  margin-top: 3rem;
+}
+
+.contact-info {
+  display: flex;
+  color: hsl(13, 45%, 86%);
+}
+
+.contact-info h3 {
+  margin: 2rem 5rem;
+}
+
+/* Attribution */
+.attribution {
+  text-align: center;
+}
+
+/* Small Phones: From 0 to 480px */
+@media only screen and (max-width: 480px) {
+  /* Navigation */
+  .main-nav {
+    width: 100%;
+    margin: 1rem 0 0 0;
+  }
+
+  .main-nav ul {
+    padding: 0;
+  }
+
+  .main-nav a {
+    margin: 0 0 0 2rem;
+  }
+
+  /* Header */
+  .header,
+  .clipboard-header,
+  .fylo-header,
+  .loop-studios-header {
+    width: 100%;
+    margin: 0;
+  }
+
+  .clipboard-header,
+  .fylo-header,
+  .loop-studios-header {
+    height: 85vh;
+  }
+
+  .clipboard-header .header-text {
+    width: 100%;
+  }
+
+  .fylo-header .header-text {
+    width: 100%;
+  }
+
+  .loop-studios-header .header-text {
+    width: 100%;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .clipboard-header h1,
+  .fylo-header h1,
+  .loop-studios-header h1 {
+    font-size: 2.75rem;
+  }
+
+  .clipboard-header h2,
+  .fylo-header h2,
+  .loop-studios-header h2 {
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    color: hsl(13, 45%, 86%);
+    border: 2px solid hsl(0, 0%, 96%);
+    width: 60%;
+    padding: 1rem;
+  }
+
+  /* Fylo Buttons */
+  .clipboard-button,
+  .fylo-button,
+  .loop-studios-button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .clipboard-live-website-button,
+  .clipboard-github-button,
+  .fylo-live-website-button,
+  .fylo-github-button,
+  .loop-studios-live-website-button,
+  .loop-studios-github-button {
+    width: 35%;
+    padding: 0.5rem 1rem;
+    border: 2px solid hsl(13, 45%, 86%);
+    background: none;
+    margin: 2rem 0 0 2rem;
+  }
+
+  .clipboard-live-website-button:hover,
+  .clipboard-github-button:hover,
+  .fylo-live-website-button:hover,
+  .fylo-github-button:hover,
+  .loop-studios-live-website-button:hover,
+  .loop-studios-github-button:hover {
+    background: hsl(12, 77%, 54%);
+    border-color: hsl(12, 77%, 54%);
+    transition: all 500ms ease;
+  }
+
+  .clipboard-live-website-button a,
+  .clipboard-github-button a,
+  .fylo-live-website-button a,
+  .fylo-github-button a,
+  .loop-studios-live-website-button a,
+  .loop-studios-github-button a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: hsl(13, 45%, 86%);
+  }
+
+  .clipboard-live-website-button:hover,
+  .clipboard-github-button:hover,
+  .fylo-live-website-button a:hover,
+  .fylo-github-button:hover a,
+  .loop-studios-live-website-button a:hover,
+  .loop-studios-github-button a:hover {
+    color: hsl(0, 0%, 96%);
+    transition: all 500ms ease;
+  }
+
+  .clipboard-background,
+  .fylo-background,
+  .loop-studios-background {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Images */
+  .project-image {
+    width: 50%;
+  }
+
+  .clipboard-project-image,
+  .fylo-project-image,
+  .loop-studios-project-image {
+    width: 90%;
+  }
+
+  /* Images */
+  .clipboard-project-image-detail-1 {
+    height: 70vh;
+    background: url("../images/detail/desktop/clipboardDetailOptimized.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 2rem 0 0 2rem;
+  }
+
+  .clipboard-project-image-detail-2 {
+    height: 70vh;
+    width: 30%;
+    background: url("../images/detail/mobile/clipboardMobileOptimized.jpg");
+    background-size: cover;
+    background-position: top;
+    margin: 2rem 0 0 2rem;
+  }
+
+  .fylo-project-image-detail-1 {
+    height: 70vh;
+    background: url("../images/detail/desktop/image-fylo-preview-1@2x.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 2rem 0 0 2rem;
+  }
+
+  .fylo-project-image-detail-2 {
+    height: 70vh;
+    background: url("../images/detail/desktop/image-fylo-preview-2@2x.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 2rem 0 0 2rem;
+  }
+
+  .loop-studios-project-image-detail-1 {
+    height: 70vh;
+    background: url("../images/detail/desktop/LoopstudiosOptimized.jpg");
+    background-size: cover;
+    background-position: top;
+    margin: 2rem 0 0 2rem;
+  }
+
+  .loop-studios-project-image-detail-2 {
+    height: 70vh;
+    width: 30%;
+    background: url("../images/detail/mobile/LoopStudiosMobileOptimized.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 2rem 0 0 2rem;
+  }
+
+  /* Images */
+  .project-describe-1,
+  .project-describe-3 {
+    width: 35%;
+    margin: 4rem 6rem;
+  }
+
+  .project-describe-2 {
+    width: 35%;
+    margin: 3rem 0 3rem 15rem;
+  }
+
+  .project-describe-1 h3,
+  .project-describe-2 h3,
+  .project-describe-3 h3 {
+    color: hsl(0, 0%, 11%);
+  }
+
+  .project-describe-1 p,
+  .project-describe-2 p,
+  .project-describe-3 p {
+    font-size: 1rem;
+    color: hsl(0, 0%, 11%);
+    line-height: 1.5rem;
+    letter-spacing: 0.015rem;
+    margin: 1rem 0;
+  }
+
+  .clipboard-project-describe,
+  .fylo-project-describe,
+  .loop-studios-project-describe {
+    width: 100%;
+    margin: 4rem 2rem;
+  }
+
+  .clipboard-project-describe h3,
+  .fylo-project-describe h3,
+  .loop-studios-project-describe h3 {
+    text-align: center;
+    width: 50%;
+    margin: 1rem 3rem;
+  }
+
+  .clipboard-project-describe p,
+  .fylo-project-describe p,
+  .loop-studios-project-describe p {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .clipboard-project-describe-1,
+  .clipboard-project-describe-2,
+  .fylo-project-describe-1,
+  .fylo-project-describe-2,
+  .loop-studios-project-describe-1,
+  .loop-studios-project-describe-2 {
+    margin: 1rem auto;
+  }
+
+  .loop-studios-project-describe-2 ol li,
+  .loop-studios-project-describe-2 ul li {
+    font-family: "Rubik-Regular";
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    width: 90%;
+  }
+
+  /* About Section */
+  .about {
+    width: 90%;
+  }
+
+  .about p {
+    width: 90%;
+  }
+
+  .portfolio-button {
+    width: 50%;
+    margin: 2rem 4rem;
+  }
+
+  /* Projects */
+  .project-1,
+  .project-2,
+  .project-3 {
+    flex-direction: column;
+    width: 90%;
+    margin: 0;
+  }
+  .projects h2 {
+    width: 50%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+
+  .projects p {
+    width: 85%;
+  }
+
+  .project-screenshot-1,
+  .project-screenshot-2,
+  .project-screenshot-3 {
+    height: 20rem;
+    width: 90%;
+    margin: 1rem 2rem;
+  }
+
+  .project-describe-1,
+  .project-describe-2,
+  .project-describe-3 {
+    width: 95%;
+    margin: 1rem 2rem;
+  }
+
+  .project-describe-1 h3,
+  .project-describe-2 h3,
+  .project-describe-3 h3 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .project-describe-1 p,
+  .project-describe-2 p,
+  .project-describe-3 p {
+    line-height: 1.75rem;
+    margin: 1rem 0;
+  }
+
+  .project-button {
+    width: 50%;
+    margin: 1rem 0 1rem 4rem;
+  }
+
+  /* Footer */
+  .footer {
+    height: 20vh;
+    width: 100%;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact-info h3 {
+    margin: 0.25rem 0;
+    text-align: center;
+  }
+}
+
+/* Small tablet to large tablet, from 767px to 1023px */
+/*
+@media only screen and (max-width: 1023px) {
+  ;dlsakjflkdajsf
+}
+*/
