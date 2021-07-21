@@ -70,6 +70,10 @@ a {
   font-family: "Roboto-Regular";
 }
 
+p {
+  font-family: "Rubik-Regular";
+}
+
 /* Navigation */
 .main-nav {
   display: flex;
@@ -134,6 +138,7 @@ a {
 }
 
 .header p {
+  font-family: "Rubik-Regular";
   color: hsl(13, 45%, 86%);
   line-height: 1.5rem;
   letter-spacing: 0.05rem;
