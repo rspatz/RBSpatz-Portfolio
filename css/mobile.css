@@ -1,0 +1,300 @@
+@media screen and (max-width: 760px) {
+  body {
+    text-align: center;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  nav {
+    padding: 1.25em 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  nav .flex {
+    flex-direction: row;
+  }
+
+  nav .img-wrapper {
+    text-align: left;
+  }
+
+  nav ul {
+    display: none;
+    padding: 0;
+  }
+
+  nav ul.show {
+    background-color: #000;
+    opacity: 90%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: 3em 0 0 0;
+    top: 4em;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 4em);
+    z-index: 100;
+  }
+
+  .show a {
+    color: #fff;
+  }
+
+  /* Changes the space between mobile links */
+  nav ul li {
+    margin: 1.5em 0;
+    font-size: 1.25em;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+    margin: 1.5em 0 0 0;
+  }
+
+  /* Navigation */
+  nav {
+    background-color: #fff;
+    padding: 1.25em 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+  }
+
+  .hamburger {
+    position: absolute;
+    margin-left: 25em;
+  }
+
+  nav .hamburger {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    cursor: pointer;
+  }
+
+  nav .hamburger:focus {
+    outline: none;
+  }
+
+  nav .hamburger .close {
+    display: none;
+  }
+
+  nav .hamburger.show .open {
+    display: none;
+  }
+
+  nav .hamburger.show .close {
+    display: block;
+  }
+
+  header p {
+    font-size: 1em;
+    line-height: 2em;
+    margin: 0 0 0 1em;
+    margin-bottom: 1.5em;
+  }
+
+  header {
+    padding-top: 1em;
+    margin-bottom: 3em;
+  }
+
+  header h3 {
+    margin: 0 0 1em 0;
+  }
+
+  header:before,
+  header:after {
+    display: none;
+  }
+
+  .about {
+    width: 95%;
+    margin: 0;
+  }
+
+  .portfolio-button {
+    width: 80%;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  /* Projects */
+  .project-heading {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  .projects p {
+    width: 92%;
+    font-size: 1.2em;
+    margin: 1em auto;
+    margin-bottom: 3em;
+    line-height: 2em;
+  }
+
+  .project-screenshot-1,
+  .project-screenshot-2,
+  .project-screenshot-3,
+  .project-screenshot-4,
+  .project-screenshot-5 {
+    width: 90%;
+  }
+
+  .project-describe-1 p,
+  .project-describe-2 p,
+  .project-describe-3 p,
+  .project-describe-4 p,
+  .project-describe-5 p {
+    width: 100%;
+  }
+
+  .arch-studio-project-describe,
+  .insure-project-describe,
+  .fylo-project-describe,
+  .loop-studios-project-describe,
+  .clipboard-project-describe {
+    width: 100%;
+  }
+
+  .arch-studio-project-describe ul,
+  .insure-project-describe ul,
+  .fylo-project-describe ul,
+  .loop-studios-project-describe ul,
+  .clipboard-project-describe ul {
+    text-align: left;
+    margin: 1rem 0 0 1rem;
+  }
+
+  .loop-studios-project-describe ol {
+    font-size: 1.25rem;
+    width: 90%;
+    text-align: left;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Project Header Buttons */
+  .arch-studio-button {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5rem;
+  }
+
+  .arch-studio-live-website-button,
+  .arch-studio-github-button,
+  .insure-live-website-button,
+  .insure-github-button,
+  .clipboard-live-website-button,
+  .clipboard-github-button,
+  .fylo-live-website-button,
+  .fylo-github-button,
+  .loop-studios-live-website-button,
+  .loop-studios-github-button {
+    width: 45%;
+    padding: 0.5rem 1rem;
+    border: 2px solid hsl(13, 45%, 86%);
+    background: none;
+  }
+
+  .arch-studio-live-website-button,
+  .arch-studio-github-button {
+    margin: 2rem 0 0 4.5rem;
+  }
+
+  .insure-live-website-button,
+  .insure-github-button {
+    margin: 2rem 0 0 1.15rem;
+  }
+
+  .clipboard-live-website-button,
+  .clipboard-github-button {
+    margin: 2rem 0 0 1.1rem;
+  }
+
+  .fylo-live-website-button,
+  .fylo-github-button {
+    margin: 2rem 0 0 1.1rem;
+  }
+
+  .loop-studios-live-website-button,
+  .loop-studios-github-button {
+    margin: 2rem 0 0 1.1rem;
+  }
+
+  .arch-studio-live-website-button a,
+  .arch-studio-github-button a,
+  .insure-live-website-button a,
+  .insure-github-button a,
+  .clipboard-live-website-button a,
+  .clipboard-github-button a,
+  .fylo-live-website-button a,
+  .fylo-github-button a,
+  .loop-studios-live-website-button a,
+  .loop-studios-github-button a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: hsl(13, 45%, 86%);
+  }
+
+  .insure-project-image-1,
+  .fylo-project-image,
+  .loop-studios-project-image,
+  .clipboard-image {
+    width: 90%;
+    background-size: cover;
+  }
+
+  .project-button {
+    width: 80%;
+  }
+
+  footer {
+    background-image: url(../images/bg-pattern-footer-mobile.svg);
+    background-size: 100% auto;
+    background-position: top center;
+    padding: 4em 0 2em;
+  }
+
+  footer .container {
+    width: 100%;
+  }
+
+  footer ul.flex {
+    flex-direction: row;
+  }
+
+  footer .flex div {
+    width: 40%;
+  }
+
+  /* Footer */
+  .footer {
+    height: 20vh;
+    width: 100%;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    line-height: 2rem;
+  }
+
+  .contact-info h3 {
+    margin: 0.25rem 0 0 7rem;
+    text-align: center;
+  }
+}
