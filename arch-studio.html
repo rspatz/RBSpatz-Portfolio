@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <title>Robert B. Spatz | Portfolio: Arch Studio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="flex">
+          <button class="hamburger" id="hamburger">
+            <img
+              class="close"
+              src="./images/icons/hamburger.svg"
+              alt="hamburger"
+            />
+            <img class="open" src="./images/icons/close.svg" alt="close" />
+          </button>
+
+          <ul class="show" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="index.html#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="container">
+        <div class="flex align-start reverse-mobile">
+          <div>
+            <h1>Robert B. Spatz</h1>
+            <h3>Front-End Developer</h3>
+            <h2 class="project-heading">Arch Studio Multi-Page Website</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="arch-studio-button">
+        <button class="arch-studio-live-website-button">
+          <a
+            href="https://rspatz.github.io/Arch-Studio-multi-page-website/"
+            target="_blank"
+            >Visit Website</a
+          >
+        </button>
+
+        <button class="arch-studio-github-button">
+          <a
+            href="https://github.com/rspatz/Arch-Studio-multi-page-website"
+            target="_blank"
+            >View Code</a
+          >
+        </button>
+      </div>
+    </header>
+
+    <section class="container projects">
+      <div class="flex">
+        <p>
+          The following projects are challenges from Front-End Mentor, a
+          platform that enables you to practice building websites to a design
+          and project brief. Each challenge includes mobile and desktop designs
+          to show how the website should look at different screen sizes. My job
+          was to build out the landing pages and multi-page websites from
+          scratch, using all my front-end skills. Creating these projects has
+          helped me refine my workflow and solve real-world coding problems.
+          I’ve learned something new with each project, helping me to improve
+          and adapt my style.
+        </p>
+
+        <div class="images">
+          <div class="arch-studio-project-image-1"></div>
+          <div class="arch-studio-project-image-2"></div>
+        </div>
+
+        <div class="arch-studio-project-describe">
+          <h3>Project Background</h3>
+          <div class="arch-studio-project-describe-1">
+            <p>
+              I recently read an article called "The State of Mobile-First and
+              Desktop First" by Ahmad Shadeed (shoutout to Matt Stoddard of
+              FrontEnd Mentor for alerting everyone to the article!). Ahmad
+              shared a Twitter poll asking how many developers use either, and
+              found that the results were mixed: nearly 25% used a mix of both.
+              First Ahmad breaks down how a developer uses mobile-first, as
+              opposed to desktop-first, the workflow used for each way, then he
+              goes on to explain the pros and cons of both.
+            </p>
+
+            <p>
+              I found it quite interesting that the mobile-first strategy has
+              more overrides, and thus more redundant code, than the
+              desktop-first. He prefers to use a mix of both, writing the base
+              styles first, then showing or hiding certain elements at various
+              viewport sizes. He also mentioned CSS specificity issues, which I
+              have encountered several times with this and other projects.
+            </p>
+
+            <p>
+              I find it disconcerting to have the desktop version of a web page
+              built out perfectly, only to find a mess after I have finished
+              with the mobile version! Ahmad prefers to work on one section or
+              element at-a-time in mobile-first, then enhancing for the desktop
+              and iPad. I have begun to use a similar strategy for my projects.
+              In the future, Ahmad believes that modern and upcoming CSS
+              features will render the discussion about mobile-first vs.
+              desktop-first moot. CSS-Grid all but dispenses with media queries
+              now, and Flexbox also makes laying out elements easier in both
+              cases. This article can be found
+              <a
+                href="https://ishadeed.com/article/the-state-of-mobile-first-and-desktop-first/"
+                target="_blank"
+                >here</a
+              >.
+            </p>
+          </div>
+
+          <div class="arch-studio-project-describe-2">
+            <h3>What I Learned</h3>
+            <p>
+              I am learning more about Flexbox, such as 'align-items: center;'
+              which I used to properly align the top navigation button with the
+              links. I have since used this to align icons and other elements on
+              other FrontEnd Mentor projects that I had been having problems
+              with.
+            </p>
+
+            <h3>Built With</h3>
+            <ul>
+              <li>Semantic HTML5</li>
+              <li>Flexbox</li>
+              <li>Responsive Design</li>
+              <li>
+                An improved strategy involving both mobile and desktop design
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="flex">
+          <div id="contact" class="contact-info">
+            <h3>Contact</h3>
+            <h3>224.406.0857</h3>
+            <h3>rspatz@live.com</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <p class="attribution">
+      Design from a Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.linkedin.com/in/robertbspatz/" target="_blank"
+        >Robert B. Spatz</a
+      >.
+    </p>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
