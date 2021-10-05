@@ -358,15 +358,14 @@ header p {
 }
 
 .project-screenshot-4 {
-  background: url('../images/detail/desktop/image-insure-preview-2.jpg')
-    no-repeat center center/cover;
+  background: url('../images/InsureDesktop.png') no-repeat center center/cover;
   height: 15rem;
   width: 18%;
   margin: 2em auto;
 }
 
 .project-screenshot-5 {
-  background: url('../images/ArchStudioLandingPage.png') no-repeat center
+  background: url('../images/ArchStudioLandingPageOpt.jpg') no-repeat center
     center/cover;
   height: 15rem;
   width: 18%;
